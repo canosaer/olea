@@ -7,7 +7,9 @@
 	<title> Olea </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/main.css">
 
 </head>
@@ -17,21 +19,21 @@
 	<header class="header">
 		<a href="#" class="header__title">Olea</a>
 		<ul class="nav">
-			<li class="nav__item">Home</li>
-			<li class="nav__item">Store</li>
-			<li class="nav__item">About</li>
-			<li class="nav__item">Blog</li>
-			<li class="nav__item">Contact</li>
+			<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+			<li class="nav__item"><a class="nav__link" href="#">Store</a></li>
+			<li class="nav__item"><a class="nav__link" href="#">About</a></li>
+			<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+			<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
 		</ul>
 		<div class="menu-toggle">
-			<div class="menu-toggle__bar"></div>
-			<div class="menu-toggle__bar"></div>
-			<div class="menu-toggle__bar"></div>
+			<figure class="menu-toggle__icon"></figure>
 		</div>
 		<ul class="menu">
-			<li class="menu__item menu__item_type_search"></li>
-			<li class="menu__item menu__item_type_cart"></li>
-			<li class="menu__item menu__item_type_number"></li>
+			<li class="menu__item">
+				<figure class="menu__icon_search"></figure>
+			</li>
+			<li class="menu__item menu__item_cart"><a class="menu__link" href="#"><img class="menu__image" src="src/img/icon-shopping-cart.svg"> </a></li>
+			<li class="menu__item menu__item_number">0</li>
 		</ul>
 	</header>
 
@@ -44,9 +46,201 @@
 
 	<ul class="info-bar">
 		<li class="info-bar__shipping">
-			
+			<figure class="info-bar__icon info-bar__icon_plane"></figure>
+			<section class="info-bar__text">
+				<h1 class="info-bar__heading">Free Shipping</h1>
+				<p class="info-bar__Caption">Free shipping on all orders</p>
+			</section>
+		</li>
+		<li class="info-bar__support">
+			<figure class="info-bar__icon info-bar__icon_support"></figure>
+			<section class="info-bar__text">
+				<h1 class="info-bar__heading">Online Support</h1>
+				<p class="info-bar__caption">Support online 24-7</p>
+			</section>
+		</li>
+		<li class="info-bar__return">
+			<figure class="info-bar__icon info-bar__icon_return"></figure>
+			<section class="info-bar__text">
+				<h1 class="info-bar__heading">Money Return</h1>
+				<p class="info-bar__caption">Guarantee 7 days</p>
+			</section>
+		</li>
+		<li class="info-bar__payment">
+			<figure class="info-bar__icon info-bar__icon_payment"></figure>
+			<section class="info-bar__text">
+				<h1 class="info-bar__heading">Secure Payment</h1>
+				<p class="info-bar__caption">All cards accepted</p>
+			</section>
 		</li>
 	</ul>
+
+	<section class="categories">
+		<div class="card card_accessories">
+			<h1 class="card card__heading">Accessories</h3>
+			<p class="card__cta">Shop Now</p>
+		</div>
+		<div class="card card_sun">
+			<h1 class="card__heading">Sun</h1>
+			<p class="card__cta">Shop Now</p>
+		</div>
+		<div class="card card_optical">
+			<h1 class="card__heading">Optical</h1>
+			<p class="card__cta">Shop Now</p>
+		</div>
+		<div class="card card_apparel">
+			<h1 class="card__heading">Apparel</h1>
+			<p class="card__cta">Shop Now</p>
+		</div>
+	</section>
+
+	<section class="arrivals">
+
+		<h1 class="arrivals__heading">Latest Arrivals</h1>
+
+		<div class="card">
+			<figure class="card__image card__image_t-shirt">
+				<figcaption class="card__update card__update_sale">Sale</figcaption>
+			</figure>
+			<a href="#" class="card__heading">White T-shirt</a>
+			<section class="card__price-display">
+				<p class="card__old-price">$10.00</p>
+				<p class="card__sale-price">$7.00</p>
+			</section>
+		</div>
+		<div class="card">
+			<figure class="card__image card__image_t-shirt">
+				<figcaption class="card__update card__update_sale">Sale</figcaption>
+			</figure>
+			<a href="#" class="card__heading">Wrist Watch</a>
+			<section class="card__price-display">
+				<p class="card__old-price">$135.00</p>
+				<p class="card__sale-price">$99.00</p>
+			</section>
+		</div>
+		<div class="card">
+			<figure class="card__image card__image_long-sleeve">
+				<figcaption class="card__update card__update_sale">Featured</figcaption>
+			</figure>
+			<a href="#" class="card__heading">Pink Long Sleeve</a>
+			<section class="card__price-display">
+				<p class="card__reg-price">$10.00</p>
+			</section>
+		</div>
+		<div class="card">
+			<figure class="card__image card__image_shades"></figure>
+			<a href="#" class="card__heading">Black One</a>
+			<section class="card__price-display">
+				<p class="card__reg-price">$50.00</p>
+			</section>
+		</div>
+
+		<a class="arrivals__cta">Shop All Items</a>
+
+		<div class="featured">
+			<h2 class="featured__heading">Featured on</h2>
+			<div class="featured__icon-display">
+				<figure class="featured__icon featured__icon_hive"></figure>
+				<figure class="featured__icon featured__icon_x"></figure>
+				<figure class="featured__icon featured__icon_plug"></figure>
+				<figure class="featured__icon featured__icon_pin"></figure>
+				<figure class="featured__icon featured__icon_skyline"></figure>
+				<figure class="featured__icon featured__icon_fluid"></figure>
+			</div>
+		</div>
+	</section>
+
+	<section class="best">
+		<h1 class="best__heading">Best of the day</h1>
+		<a href="#" class="best__cta">View Collection</a>
+	</section>
+
+	<section class="blog">
+		<figure class="card card_lifestyle">
+			<div class="card__text-display">
+				<h1 class="card__heading">Lifestyle</h1>
+				<figcaption class="card__caption">Doing a cross country</figcaption>
+				<a href="#" class="card__cta">Read More</a>
+			</div>
+		</figure>
+		<div class="blog-row">
+			<figure class="card card_luxury">
+				<div class="card__text-display">
+					<h1 class="card__heading">Luxury</h1>
+					<figcaption class="card__caption">The black watch</figcaption>
+					<a href="#" class="card__cta">Read More</a>
+				</div>
+			</figure>
+			<figure class="card card_fasion">
+				<div class="card__text-display">
+					<h1 class="card__heading">Fashion</h1>
+					<figcaption class="card__caption">The best of fashion design</figcaption>
+					<a href="#" class="card__cta">Read More</a>
+				</div>
+			</figure>
+		</div>
+	</section>
+
+	<section class="follow">
+		<div class="follow__cta">
+			<figure class="follow__icon"></figure>
+			<a href="#" class="follow__text">Follow Olea</a>
+		</div>
+		<figure class="follow__image follow__image_watch"></figure>
+		<figure class="follow__image follow__image_shades"></figure>
+		<figure class="follow__image follow__image_dress"></figure>
+		<figure class="follow__image follow__image_shoe"></figure>
+		<figure class="follow__image follow__image_shirt"></figure>
+		<figure class="follow__image follow__image_coat"></figure>
+	</section>
+
+	<section class="bottom-nav">
+		<div class="bottom-nav__category">
+			<h1 class="bottom-nav__heading">Shop</h1>
+			<ul class="bottom-nav__list">
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">All</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Accessories</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Sport</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Apparel</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Optical</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Sun</a></li>
+			</ul>
+		</div>
+		<div class="bottom-nav__category">
+			<h1 class="bottom-nav__heading">Menu</h1>
+			<ul class="bottom-nav__list">
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Home</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Store</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">About</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Blog</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Contact</a></li>
+			</ul>
+		</div>
+		<div class="bottom-nav__category">
+			<h1 class="bottom-nav__heading">Helpful Links</h1>
+			<ul class="bottom-nav__list">
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Style Guide</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Licensing</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">404 Error Page</a></li>
+				<li class="bottom-nav__item"><a href="#" class="bottom-nav__link">Protected Page</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="sign-up">
+		<h1 class="sign-up__heading">The good stuff in your inbox</h1>
+		<p class="sign-up__caption">News & updates from Olea. No spam, we promise.</p>
+		<form class="sign-up__form">
+			<div class="sign-up__row">
+				<input class="sign-up__email" type="text" name="email" required></input>
+				<button class="sign-up__button">Sign Up<div class="sign-up__arrow"></div></button>
+			</div>
+		</form>
+	</section>
+
+	<footer class="footer">
+		<p class="footer__text">&reg; 2019 Olea by <a href="#" class="footer__link">Deni Bozo</a>. Powered by <a href="#" class="footer__link">Webflow</a>.</p>
+	</footer>
 
 	<script src="dist/js/main.js"></script>
 

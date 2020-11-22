@@ -1,14 +1,13 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:	Olea
+AUTHOR:		Eric Canosa
 ==============================================
 
 TABLE OF CONTENTS:
 
 0. Reset
-1. Main Layout
-2. Content
+1. STYLES
 
 ==============================================
 */
@@ -148,8 +147,70 @@ table {
 	border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
+/* 1. STYLES ================================= */
 
+body{
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
 
+.header{
+	display: flex;
+	padding: 5vh 5vw;
+	justify-content:space-between;
+}
 
-/* 2. Content ================================= */
+.header__title{
+	font-size: 2rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.nav{
+	display: none;
+}
+
+.menu-toggle{
+	padding: 1vh 1vw;
+	border: 1px solid #ccc;
+}
+
+.menu-toggle__icon{
+	background: url(../../src/img/hamburger.png);
+	height: 25px;
+	width: 25px;
+	background-size:cover;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-item{
+	padding: 1vh 1vw;
+}
+
+.menu__item_search{
+	background: url(../../src/img/icon-magnifying-glass.svg);
+	border-right: 1px solid #ccc;
+
+}
+
+.menu__item{
+	height: 25px;
+	width: 25px;
+	background-size:cover;
+	padding: 1vw 1vh;
+}
+
+.menu-item_number{
+	border: 1px solid black;
+
+}
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Indie Flower', cursive;
+*/
+
