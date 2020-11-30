@@ -154,6 +154,10 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+a{
+	text-decoration: none;
+}
+
 .header{
 	display: flex;
 	padding: 5vh 5vw;
@@ -228,7 +232,317 @@ body{
 	user-select: none;
 }
 
+.hero{
+	background: url(../../src/img/banner1.jpg);
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
 
+.hero__heading{
+	font-size: 1.5rem;
+	margin-bottom: 6vh;
+}
+
+.hero__line{
+	background-color:white;
+	height: 2px;
+	width: 50px;
+	margin-bottom: 6vh;
+}
+
+.hero__caption{
+	font-size: 1.15rem;
+	margin-bottom: 6vh;
+}
+
+.header__cta{
+	color:white;
+	font-size: 1rem;
+}
+
+.info-section{
+	display:flex;
+}
+
+.info-bar{
+	width: 90%;
+	margin: 10vh auto;
+	border: 1px solid #ccc;
+}
+
+.info-bar__row {
+	display: flex;
+	margin: 0% 7%;
+	border-bottom: 1px solid #ccc;
+	padding: 4vh 0vw;
+}
+
+.info-bar__row:last-child {
+	border-bottom: 1px solid #ccc;
+}
+
+
+.info-bar__icon{
+	width: 60px;
+	height: 60px;
+	margin-right: 8vw;
+}
+
+.info-bar__icon_plane{
+	background: url(../../src/img/icon-air-freight.svg)
+}
+
+.info-bar__icon_support{
+	background: url(../../src/img/icon-speech-bubble.svg)
+}
+
+.info-bar__icon_return{
+	background: url(../../src/img/icon-piggy-bank.svg)
+}
+
+.info-bar__icon_payment{
+	background: url(../../src/img/icon-credit-card.svg)
+}
+
+.info-bar__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.info-bar__heading{
+	font-weight:bold;
+	font-size: 1.125rem;
+	margin-bottom: 3vh;
+}
+
+.info-bar__caption{
+	color: #ccc;
+	font-size: 1rem;
+}
+
+.categories{
+	display: flex;
+	flex-direction: column;
+}
+
+.categories .card{
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0% 5%;
+	border-radius: 2%;
+	color:white;
+	margin-bottom: 4vh;
+}
+
+.categories .card_accessories{
+	background: url(../../src/img/Category-1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.categories .card_sun{
+	background: url(../../src/img/Category-4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.categories .card_optical{
+	background: url(../../src/img/Category-2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.categories .card_apparel{
+	background: url(../../src/img/Category-3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.categories .card__heading{
+	font-size: 1.75rem;
+	margin-bottom: 5vh;
+}
+
+.categories .card__cta{
+	margin-bottom: 10vh;
+}
+
+.arrivals{
+	display: flex;
+	flex-direction: column;
+	margin: 0% 5%;
+}
+
+.arrivals__heading{
+	font-size: 1.75rem;
+	margin: 20vh auto 5vh;
+}
+
+.arrivals .card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 4vh;
+}
+
+.arrivals .card__image{
+	width: 100%;
+}
+
+.arrivals .card__image_t-shirt{
+	background: url(../../src/img/product-4.jpg);
+	background-size: cover;
+	background-position:center;
+	height: 670px;
+}
+
+.arrivals .card__update{
+	padding: 1.5vh 3vw;
+	color: white;
+	border-radius: 10%;
+	font-size: 1.125rem;
+	margin: 4vw;
+	display: inline-block;
+	cursor: default;
+}
+
+.arrivals .card__update_sale{
+	background: #fe6362;
+}
+
+.arrivals .card__update_featured{
+	background: #5ccc86;
+}
+
+.arrivals .card__heading{
+	margin: 4vh;
+	color: black;
+	font-size: 1.375rem;
+}
+
+.arrivals .card__price-display{
+	display: flex;
+	font-size: 1.25rem;
+}
+
+.arrivals .card__old-price{
+	color: #c5c5c9;
+	text-decoration: line-through;
+	margin-right: 1vw;
+}
+
+.arrivals .card__sale-price{
+	color: #909097;
+}
+
+.arrivals .card__reg-price{
+	color: #909097;
+}
+
+.arrivals .card__image_watch{
+	background: url(../../src/img/product-3.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.arrivals .card__image_long-sleeve{
+	background: url(../../src/img/product-2.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 670px;
+}
+
+.arrivals .card__image_shades{
+	background: url(../../src/img/product-1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.arrivals__cta{
+	margin: 6vh auto;
+	font-size: 1.25rem;
+}
+
+.featured{
+	border:1px solid #ccc;
+	position: relative;
+	justify-content: center;
+	display:flex;
+}
+
+.featured__icon-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.featured__heading{
+	position: absolute;
+	top: -8px;
+}
+
+.featured__icon{
+	width: 120px;
+	height: 120px;
+	margin: 5vh 0vw;
+}
+
+.featured__icon-item{
+	width: 49%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.featured__icon_hive{
+	background: url(../../src/img/logo-1.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.featured__icon_x{
+	background: url(../../src/img/logo-4.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.featured__icon_plug{
+	background: url(../../src/img/logo-2.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.featured__icon_pin{
+	background: url(../../src/img/logo-5.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.featured__icon_skyline{
+	background: url(../../src/img/logo-3.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.featured__icon_fluid{
+	background: url(../../src/img/logo-6.png);
+	background-size: cover;
+	background-position: center;
+}
 
 /*
 font-family: 'Poppins', sans-serif;

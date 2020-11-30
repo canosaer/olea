@@ -17,14 +17,16 @@
 <body>
 
 	<header class="header">
-		<a href="#" class="header__title">Olea</a>
-		<ul class="nav">
-			<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-			<li class="nav__item"><a class="nav__link" href="#">Store</a></li>
-			<li class="nav__item"><a class="nav__link" href="#">About</a></li>
-			<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-			<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-		</ul>
+		<h1><a href="#" class="header__title">Olea</a></h1>
+		<nav>
+			<ul class="nav">
+				<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Store</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">About</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+			</ul>
+		</nav>
 		<div class="menu-toggle">
 			<figure class="menu-toggle__icon"></figure>
 		</div>
@@ -40,44 +42,46 @@
 	<section class="hero">
 		<h1 class="hero__heading">Our collection on Sale Now</h1>
 		<div class="hero__line"></div>
-		<p class="hero__caption"></p>
-		<a href="#" class="header__cta"></a>
+		<p class="hero__caption">Mid-season SALE only at Olea</p>
+		<a href="#" class="header__cta">View Collection</a>
 	</section>
 
-	<ul class="info-bar">
-		<li class="info-bar__shipping">
-			<figure class="info-bar__icon info-bar__icon_plane"></figure>
-			<section class="info-bar__text">
-				<h1 class="info-bar__heading">Free Shipping</h1>
-				<p class="info-bar__Caption">Free shipping on all orders</p>
-			</section>
-		</li>
-		<li class="info-bar__support">
-			<figure class="info-bar__icon info-bar__icon_support"></figure>
-			<section class="info-bar__text">
-				<h1 class="info-bar__heading">Online Support</h1>
-				<p class="info-bar__caption">Support online 24-7</p>
-			</section>
-		</li>
-		<li class="info-bar__return">
-			<figure class="info-bar__icon info-bar__icon_return"></figure>
-			<section class="info-bar__text">
-				<h1 class="info-bar__heading">Money Return</h1>
-				<p class="info-bar__caption">Guarantee 7 days</p>
-			</section>
-		</li>
-		<li class="info-bar__payment">
-			<figure class="info-bar__icon info-bar__icon_payment"></figure>
-			<section class="info-bar__text">
-				<h1 class="info-bar__heading">Secure Payment</h1>
-				<p class="info-bar__caption">All cards accepted</p>
-			</section>
-		</li>
-	</ul>
+	<section class="info-section">
+		<ul class="info-bar">
+			<li class="info-bar__row">
+				<figure class="info-bar__icon info-bar__icon_plane"></figure>
+				<section class="info-bar__text">
+					<h1 class="info-bar__heading">Free Shipping</h1>
+					<p class="info-bar__caption">Free shipping on all orders</p>
+				</section>
+			</li>
+			<li class="info-bar__row">
+				<figure class="info-bar__icon info-bar__icon_support"></figure>
+				<section class="info-bar__text">
+					<h1 class="info-bar__heading">Online Support</h1>
+					<p class="info-bar__caption">Support online 24-7</p>
+				</section>
+			</li>
+			<li class="info-bar__row">
+				<figure class="info-bar__icon info-bar__icon_return"></figure>
+				<section class="info-bar__text">
+					<h1 class="info-bar__heading">Money Return</h1>
+					<p class="info-bar__caption">Guarantee 7 days</p>
+				</section>
+			</li>
+			<li class="info-bar__row">
+				<figure class="info-bar__icon info-bar__icon_payment"></figure>
+				<section class="info-bar__text">
+					<h1 class="info-bar__heading">Secure Payment</h1>
+					<p class="info-bar__caption">All cards accepted</p>
+				</section>
+			</li>
+		</ul>
+	</section>
 
 	<section class="categories">
 		<div class="card card_accessories">
-			<h1 class="card card__heading">Accessories</h3>
+			<h1 class="card__heading">Accessories</h3>
 			<p class="card__cta">Shop Now</p>
 		</div>
 		<div class="card card_sun">
@@ -109,7 +113,7 @@
 			</section>
 		</div>
 		<div class="card">
-			<figure class="card__image card__image_t-shirt">
+			<figure class="card__image card__image_watch">
 				<figcaption class="card__update card__update_sale">Sale</figcaption>
 			</figure>
 			<a href="#" class="card__heading">Wrist Watch</a>
@@ -120,11 +124,11 @@
 		</div>
 		<div class="card">
 			<figure class="card__image card__image_long-sleeve">
-				<figcaption class="card__update card__update_sale">Featured</figcaption>
+				<figcaption class="card__update card__update_featured">Featured</figcaption>
 			</figure>
 			<a href="#" class="card__heading">Pink Long Sleeve</a>
 			<section class="card__price-display">
-				<p class="card__reg-price">$10.00</p>
+				<p class="card__reg-price">$44.00</p>
 			</section>
 		</div>
 		<div class="card">
@@ -140,12 +144,27 @@
 		<div class="featured">
 			<h2 class="featured__heading">Featured on</h2>
 			<div class="featured__icon-display">
-				<figure class="featured__icon featured__icon_hive"></figure>
-				<figure class="featured__icon featured__icon_x"></figure>
-				<figure class="featured__icon featured__icon_plug"></figure>
-				<figure class="featured__icon featured__icon_pin"></figure>
-				<figure class="featured__icon featured__icon_skyline"></figure>
-				<figure class="featured__icon featured__icon_fluid"></figure>
+				<ul class="featured__icon-list">
+					<li class="featured__icon-item">
+						<figure class="featured__icon featured__icon_hive"></figure>
+					</li>
+					<li class="featured__icon-item">
+						<figure class="featured__icon featured__icon_x"></figure>
+					</li>
+					<li class="featured__icon-item">
+						<figure class="featured__icon featured__icon_plug"></figure>
+					</li>
+					<li class="featured__icon-item">
+						<figure class="featured__icon featured__icon_pin"></figure>
+					</li>
+					<li class="featured__icon-item">
+						<figure class="featured__icon featured__icon_skyline"></figure>
+					</li>
+					<li class="featured__icon-item">
+						<figure class="featured__icon featured__icon_fluid"></figure>
+					</li>
+				</ul>
+				
 			</div>
 		</div>
 	</section>
