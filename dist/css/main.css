@@ -156,6 +156,7 @@ body{
 
 a{
 	text-decoration: none;
+	color: white;
 }
 
 .header{
@@ -262,7 +263,6 @@ a{
 }
 
 .header__cta{
-	color:white;
 	font-size: 1rem;
 }
 
@@ -284,9 +284,8 @@ a{
 }
 
 .info-bar__row:last-child {
-	border-bottom: 1px solid #ccc;
+	border-bottom:none;
 }
-
 
 .info-bar__icon{
 	width: 60px;
@@ -425,9 +424,10 @@ a{
 }
 
 .arrivals .card__heading{
-	margin: 4vh;
+	margin: 3vh;
 	color: black;
 	font-size: 1.375rem;
+	font-weight: bold;
 }
 
 .arrivals .card__price-display{
@@ -471,15 +471,19 @@ a{
 }
 
 .arrivals__cta{
-	margin: 6vh auto;
+	margin: 5vh auto 19vh;
 	font-size: 1.25rem;
+	font-weight: bold;
+	color: black;
 }
 
 .featured{
-	border:1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 	position: relative;
 	justify-content: center;
 	display:flex;
+	margin-bottom: 15vh;
 }
 
 .featured__icon-list{
@@ -490,7 +494,13 @@ a{
 
 .featured__heading{
 	position: absolute;
-	top: -8px;
+	top: -25px;
+	background: white;
+	opacity: 1;
+	padding: 1.5vh 4vw;
+	font-size: 1.375rem;
+
+
 }
 
 .featured__icon{
@@ -500,12 +510,12 @@ a{
 }
 
 .featured__icon-item{
-	width: 49%;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+	width: calc(50% - 1px);
 }
 
 .featured__icon_hive{
@@ -540,9 +550,271 @@ a{
 
 .featured__icon_fluid{
 	background: url(../../src/img/logo-6.png);
+	background-size: contain;
+	background-position: center;
+}
+
+.best{
+	background: url(../../src/img/banner-small.jpg);
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.best__heading{
+	font-family: 'Indie Flower', cursive;
+	font-size: 2.75rem;
+	margin-bottom: 4vh;
+}
+
+.best__cta{
+	font-size: 1.125rem;
+	margin-bottom: 11vh;
+}
+
+.blog{
+	display:flex;
+	flex-direction:column;
+	background-color: #f5f5f7;
+	text-align: center;
+	padding-top: 12vh; 
+}
+
+.blog__heading{
+	font-size: 1.75rem;
+	margin-bottom: 5vh;
+}
+
+.blog .card{
+	margin: 0% 5%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0% 7%;
+	margin-bottom: 4vh;
+}
+
+.blog .card_lifestyle{
+	background: url(../../src/img/blog-3.jpg);
 	background-size: cover;
 	background-position: center;
 }
+
+.blog .card_luxury{
+	background: url(../../src/img/blog-1.jpg);
+	background-size: cover;
+	background-position: center;
+	height:300px;
+	margin-bottom: 0px;
+}
+
+.blog .card_fashion{
+	background: url(../../src/img/blog-2.jpg);
+	background-size: cover;
+	background-position: center;
+	height:300px;
+	margin-bottom: 0px;
+}
+
+.card__text-display{
+	background: white;
+	height: 270px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.blog .card__heading{
+	font-size: 1.125rem;
+	color: #ccc;
+}
+
+.blog .card__caption{
+	font-size: 1.375rem;
+}
+
+.blog .card__cta{
+	color: black;
+	font-size: 1.125rem;
+}
+
+.card_luxury+.card__text-display, .card_fashion+.card__text-display{
+	margin: 0% 5% 4vh;
+}
+
+.follow{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	margin-bottom: 12vh;
+}
+
+.follow__image{
+	height: 190px;
+	width: 33.3%;
+}
+
+.follow__image_watch{
+	background: url(../../src/img/insta-1.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.follow__image_shades{
+	background: url(../../src/img/insta-5.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.follow__image_dress{
+	background: url(../../src/img/insta-3.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.follow__image_shoe{
+	background: url(../../src/img/insta-2.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.follow__image_shirt{
+	background: url(../../src/img/insta-4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.follow__image_coat{
+	background: url(../../src/img/insta-6.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.follow__cta{
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	height: 65px;
+	background-color:white;
+	width: 40vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.follow__text{
+	color:black;
+	font-size: 1.25rem;
+	padding-bottom: 0.4vh;
+}
+
+.follow__icon{
+	background: url(../../src/img/icon-instagram.png);
+	background-size: cover;
+	background-position: center;
+	height: 25px;
+	width: 25px;
+}
+
+
+.bottom-nav{
+	display:flex;
+	flex-direction: column;
+	margin: 0% 5%;
+}
+
+.bottom-nav__heading{
+	font-size: 1.625rem;
+	margin-bottom: 3vh;
+}
+
+.bottom-nav__link{
+	color: black;
+	font-size: 1.125rem;
+}
+
+.bottom-nav__item{
+	margin-bottom: 3vh;
+}
+
+.bottom-nav__category{
+	margin-bottom: 4vh;
+}
+
+.sign-up{
+	margin: 1vh 5% 0vh;
+}
+
+.sign-up__heading{
+	font-size: 1.375rem;
+	margin-bottom: 2vh;
+}
+
+.sign-up__caption{
+	color: #909097;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	margin-bottom: 3vh;
+}
+
+.sign-up__email{
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.125rem;
+	outline: none;
+}
+
+.sign-up__row{
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+	padding: 0vh 1vw 0vh 3vw;
+}
+
+.sign-up__button{
+	background:white;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.25rem;
+	outline: none;
+	cursor: pointer;
+}
+
+.sign-up__arrow{
+	background: url(../../src/img/arrow-pointing-to-right.svg);
+	background-size: cover;
+	background-position: center;
+	width: 25px;
+	height: 18px;
+	display: inline-block;
+	margin: 0vh 0vh -0.3vh 1vh;
+}
+
+.sign-up{
+	margin-bottom: 8vh;
+}
+
+.footer{
+	margin: 0% 5% 6vh;
+}
+
+.footer__text{
+	color: #909097;
+}
+
+.footer__link{
+	color: black;
+	font-weight: bold;
+}
+
+
 
 /*
 font-family: 'Poppins', sans-serif;
