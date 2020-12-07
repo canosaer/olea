@@ -150,7 +150,7 @@ table {
 /* 1. STYLES ================================= */
 
 body{
-	box-sizing:border-box;
+	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -297,19 +297,27 @@ a{
 }
 
 .info-bar__icon_plane{
-	background: url(../../src/img/icon-air-freight.svg)
+	background: url(../../src/img/icon-air-freight.svg);
+	background-size: cover;
+	background-position: center;
 }
 
 .info-bar__icon_support{
-	background: url(../../src/img/icon-speech-bubble.svg)
+	background: url(../../src/img/icon-speech-bubble.svg);
+	background-size: cover;
+	background-position: center;
 }
 
 .info-bar__icon_return{
-	background: url(../../src/img/icon-piggy-bank.svg)
+	background: url(../../src/img/icon-piggy-bank.svg);
+	background-size: cover;
+	background-position: center;
 }
 
 .info-bar__icon_payment{
-	background: url(../../src/img/icon-credit-card.svg)
+	background: url(../../src/img/icon-credit-card.svg);
+	background-size: cover;
+	background-position: center;
 }
 
 .info-bar__text{
@@ -912,4 +920,156 @@ a{
 	.follow__cta{
 		width: 24vw;
 	}
+}
+
+@media screen and (min-width: 1024px){  /*desktop*/
+	.header{
+		justify-content: space-between;
+		padding: 2vh 5vw;
+	}
+
+	.nav{
+		display: flex;
+		justify-content: space-between;
+		width: 565px;
+	}
+
+	.nav__link{
+		color: black;
+		font-size: 1.125rem;
+		padding: 1vh 1vw;
+	}
+	
+	.menu-toggle{
+		display: none;
+	}
+	
+	.menu{
+		margin-left: 0px;
+	}
+
+	.hero__heading{
+		font-size: 2.5rem;
+		margin-bottom: 3vh;
+	}
+	
+	.hero__line{
+		margin-bottom: 3vh;
+	}
+	
+	.hero__caption{
+		margin-bottom: 3vh;
+	}
+
+	.info-bar{
+		width: 76%;
+		display: flex;
+		padding: 0vh 1vw;
+		margin: 7vh auto;
+	}
+	
+	.info-bar__row {
+		margin: 0%;
+		border-bottom: none;
+		padding: 2vh 0vw;
+		width: 50%;
+		align-items: center;
+	}
+		
+	.info-bar__icon{
+		margin: 0vh 1.5vw;
+		width: 60px;
+		height: 60px;
+	}
+	
+	.info-bar__text{
+		border-right: 1px solid #ccc;
+		width: 151px;
+		padding-right: 1vw;
+		height: 7vh;
+	}
+
+	.info-bar__icon_payment+.info-bar__text{
+		border-right: none;
+		margin-right: 0px;
+	}
+	
+	.info-bar__heading{
+		font-size: 1.125rem;
+		margin: 0vh 0vw 1vh;
+	}
+	
+	.info-bar__caption{
+		font-size: 1rem;
+		width: unset;
+	}
+
+	.info-bar__icon_plane{
+		margin-left: 0px;
+	}
+
+	.categories{
+		height: 120vh;
+		flex-wrap: wrap;
+		width: 78%;
+		margin: 0vh auto;
+	}
+
+	.categories .card{
+		width: 49%;
+		margin: 0vh 0vw 2vh 0vw;
+		height: 610px;
+	}
+
+	.categories .card_optical{
+		margin-left: auto;
+	}
+
+	.categories .card_apparel{
+		margin-left: auto;
+	}
+
+	.categories .card_sun{
+		height: 453px;
+	}
+
+	.categories .card_optical{
+		height: 453px;
+	}
+
+	.arrivals{
+		margin: 0% 11%;
+	}
+
+	.arrivals__heading{
+		margin: 7vh auto 5vh;
+	}
+
+	.arrivals__row{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.arrivals .card__update {
+		padding: 1vh 1.5vw;
+		margin: 1vw;
+	}
+
+	.arrivals .card__image_t-shirt {
+		height: 431px;
+	}
+
+	.arrivals .card__image_watch {
+		height: 192px;
+	}
+
+	.arrivals .card__image_long-sleeve {
+		height: 431px;
+	}
+
+	.arrivals .card__image_shades {
+		height: 192px;
+	}
+
 }
