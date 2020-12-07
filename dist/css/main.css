@@ -210,15 +210,15 @@ a{
 
 .menu__icon_search{
 	background: url(../../src/img/icon-magnifying-glass.svg);
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 	background-size: cover;
 	cursor: pointer;
 }
 
 .menu__image{
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 }
 
 .menu__item_cart{
@@ -228,11 +228,11 @@ a{
 .menu__item_number{
 	border: 1px solid black;
 	border-radius: 50%;
-	font-size: 0.75rem;
-	height: 15px;
-	width: 15px;
+	height: 25px;
+	width: 25px;
 	justify-content:center;
 	user-select: none;
+	line-height: 1.1;
 }
 
 .hero{
@@ -498,7 +498,7 @@ a{
 	position: relative;
 	justify-content: center;
 	display:flex;
-	margin-bottom: 15vh;
+	margin: 0% 5% 15vh;
 }
 
 .featured__icon-list{
@@ -856,14 +856,17 @@ a{
 		margin: 0% 20%;
 	}
 
+	.featured__icon-display{
+		width: 100%;
+	}
+	
+	.featured__icon-item{
+		width: calc(33.3% - 0.8px);
+	}
+
 	.blog-row{
 		display:flex;
 		flex-wrap:wrap;
-	}
-
-	.blog-row > .blog-row{
-		width: 100%;
-		flex-wrap:no-
 	}
 
 	.blog .card_luxury{
@@ -871,6 +874,7 @@ a{
 		margin-right: 0px;
 		width: 30%;
 	}
+
 	.card__text-display{
 		background: white;
 		height: 270px;
@@ -881,26 +885,31 @@ a{
 	
 	.blog .card_fashion{
 		height:270px;
-		margin-right: 0px;
+		margin-left: 0px;
+		width: 32%;
+		order: 1;
 	}
 	
-	.blog .card__heading{
-		font-size: 1.125rem;
-		color: #ccc;
-	}
-	
-	.blog .card__caption{
-		font-size: 1.375rem;
-	}
-	
-	.blog .card__cta{
-		color: black;
-		font-size: 1.125rem;
-	}
-	
-	.card_luxury+.card__text-display, .card_fashion+.card__text-display{
+	.card_luxury+.card__text-display{
 		margin: 0% 0% 4vh 0%;
-		width: 50%;
+		width: 46%;
 	}
 
+	.card_fashion+.card__text-display{
+		margin: 0% 0% 4vh 5%;
+		width: 44%;
+	}
+
+	.follow{
+		flex-wrap: nowrap;
+	}
+	
+	.follow__image{
+		height: 150px;
+		width: 16.67%;
+	}
+	
+	.follow__cta{
+		width: 24vw;
+	}
 }
