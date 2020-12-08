@@ -956,7 +956,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 1024px){  /*desktop*/
+@media screen and (min-width: 1388px){  /*desktop*/
 	.header{
 		justify-content: space-between;
 		padding: 2vh 5vw;
