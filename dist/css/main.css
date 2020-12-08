@@ -613,13 +613,12 @@ a{
 }
 
 .blog .card{
-	margin: 0% 5%;
+	margin: 0% 5% 4vh;
 	height: 500px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 0% 7%;
-	margin-bottom: 4vh;
 }
 
 .blog .card_lifestyle{
@@ -1056,20 +1055,151 @@ a{
 		margin: 1vw;
 	}
 
+	.arrivals .card{
+		width: 250px;
+	}
+
 	.arrivals .card__image_t-shirt {
 		height: 431px;
+		background-size: contain;
 	}
 
 	.arrivals .card__image_watch {
 		height: 192px;
+		background-size: contain;
 	}
 
 	.arrivals .card__image_long-sleeve {
 		height: 431px;
+		background-size: contain;
 	}
 
 	.arrivals .card__image_shades {
 		height: 192px;
+		background-size: contain;
+	}
+
+	.arrivals__cta {
+		margin: 5vh auto 14vh;
+	}
+
+	.featured__icon-list {
+		flex-wrap:nowrap;
+	}
+
+	.featured {
+		margin: 0% 16% 11vh;
+		border: 1px solid #ccc;
+	}
+
+	.featured__icon-item {
+		border-right: none;
+   		border-bottom: none;
+	}
+
+	.featured__icon{
+		margin: 4 vh 0vw;
+	}
+
+	.best{
+		height: 590px;
+	}
+
+	.blog{
+		padding-top: 11vh;
+	}
+
+	.blog__main-row{
+		display: flex;
+		margin-bottom: 11vh;
+	}
+
+	.blog .card{
+		margin: 0%;
+	}
+
+	.blog-row{
+		margin: 0% 0% 0% 1.5vw;
+		width: 50%;
+	}
+
+	.blog .card_lifestyle{
+		height: 612px;
+		width: 33.3%;
+		margin: 0% 1.5vw 0% 5%;
+	}
+
+	.blog .card_luxury{
+		width: 33.3%;
+	}
+
+	.card_luxury+.card__text-display{
+		width: 46.6%;
+		margin: 0% 0% 0% 0%;
+	}
+
+	.card_fashion+.card__text-display{
+		margin: auto 0% 0% 0%;
+		width: 46.6%;
+		height: 50%;
+	}
+
+	.blog .card_fashion {
+		margin-top: auto;
+		height: 50%;
+		width: 33.3%;
+	}
+	
+	.blog .card__caption{
+		width: 90%;
+		margin: 0% auto;
+	}
+
+	.follow__image{
+		height: 264px;
+	}
+
+	.follow__cta{
+		width: 13vw;
+	}
+
+	.follow{
+		margin-bottom: 11vh;
+	}
+
+	.bottom-nav{
+		flex-direction: row;
+		width: 44%;
+		justify-content: space-between;
+	}
+
+	.bottom-nav__heading{
+		font-size: 1.875rem;
+	}
+
+	.last-row{
+		display: flex;
+	}
+
+	.bottom-nav__link{
+		font-size: 1.125rem;
+	}
+
+	.sign-up{
+		margin: 0vh 5% 0vh auto;
+		width: 38%;
+	}
+	
+	.sign-up__heading{
+		font-size: 1.5rem;
+	}
+
+	.sign-up__caption{
+		font-size: 1.2rem;
+	}
+
+	.sign-up__row{
+		padding: 0vh 0vw 0vh 1.5vw;
 	}
 
 }
