@@ -1,4 +1,8 @@
-"use strict";
+let hamburgerDIV = document.querySelector(`.menu-toggle`)
+let expandedDIV = document.querySelector(`.expanded`)
+let expandedStyles = window.getComputedStyle(expandedDIV)
 
-console.log("Hello World from main.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
-//# sourceMappingURL=main.js.map
+hamburgerDIV.addEventListener(`click`, function(){
+    if(expandedStyles.getPropertyValue(`display`) === `none`) {expandedDIV.style.display = `flex`}
+    else expandedDIV.style.display = `none`
+})
