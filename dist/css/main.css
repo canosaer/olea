@@ -956,7 +956,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 1388px){  /*desktop*/
+@media screen and (min-width: 1024px){  /*desktop*/
 	.header{
 		justify-content: space-between;
 		padding: 2vh 5vw;
@@ -1012,8 +1012,10 @@ a{
 		
 	.info-bar__icon{
 		margin: 0vh 1.5vw;
-		width: 60px;
+		width: 33.3%;
 		height: 60px;
+		background-size:contain;
+		background-repeat:no-repeat;
 	}
 	
 	.info-bar__text{
@@ -1043,7 +1045,7 @@ a{
 	}
 
 	.categories{
-		height: 120vh;
+		height: 1110px;
 		flex-wrap: wrap;
 		width: 78%;
 		margin: 0vh auto;
@@ -1076,7 +1078,7 @@ a{
 	}
 
 	.arrivals__heading{
-		margin: 7vh auto 5vh;
+		margin: 7vh auto 4vh;
 	}
 
 	.arrivals__row{
@@ -1085,33 +1087,47 @@ a{
 		justify-content: space-between;
 	}
 
-	.arrivals .card__update {
-		padding: 1vh 1.5vw;
-		margin: 1vw;
+	.arrivals .card{
+		width: 25%;
 	}
 
-	.arrivals .card{
-		width: 250px;
+	.arrivals .card__image{
+		justify-content: center;
+		display: flex;
+	}
+
+	.arrivals .card__update {
+		padding: 6px;
+		margin: 3% 35% auto 0%;
+
+	}
+
+	.card__image_long-sleeve>.card__update{
+		margin-right: 23%;
 	}
 
 	.arrivals .card__image_t-shirt {
-		height: 431px;
+		height: 29vh;
 		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.arrivals .card__image_watch {
-		height: 192px;
+		height: 13vh;
 		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.arrivals .card__image_long-sleeve {
-		height: 431px;
+		height: 29vh;
 		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.arrivals .card__image_shades {
-		height: 192px;
+		height: 13vh;
 		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.arrivals__cta {
@@ -1134,6 +1150,9 @@ a{
 
 	.featured__icon{
 		margin: 4 vh 0vw;
+		width: 90%;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.best{
