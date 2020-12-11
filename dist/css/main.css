@@ -319,6 +319,7 @@ a{
 	border-bottom: 1px solid #ccc;
 	padding: 4vh 0vw;
 	justify-content: center;
+	align-items: center;
 }
 
 .info-bar__row:last-child {
@@ -326,33 +327,33 @@ a{
 }
 
 .info-bar__icon{
-	width: 60px;
-	height: 60px;
+	width: 14%;
+	height: 50px;
 	margin-right: 8vw;
 }
 
 .info-bar__icon_plane{
 	background: url(../../src/img/icon-air-freight.svg);
-	background-size: cover;
-	background-position: center;
+	background-size:contain;
+	background-repeat:no-repeat;
 }
 
 .info-bar__icon_support{
 	background: url(../../src/img/icon-speech-bubble.svg);
-	background-size: cover;
-	background-position: center;
+	background-size:contain;
+	background-repeat:no-repeat;
 }
 
 .info-bar__icon_return{
 	background: url(../../src/img/icon-piggy-bank.svg);
-	background-size: cover;
-	background-position: center;
+	background-size:contain;
+	background-repeat:no-repeat;
 }
 
 .info-bar__icon_payment{
 	background: url(../../src/img/icon-credit-card.svg);
-	background-size: cover;
-	background-position: center;
+	background-size:contain;
+	background-repeat:no-repeat;
 }
 
 .info-bar__text{
@@ -1011,7 +1012,7 @@ a{
 	}
 		
 	.info-bar__icon{
-		margin: 0vh 1.5vw;
+		margin: 0vh 1vw 0vh 1.5vw;
 		width: 33.3%;
 		height: 60px;
 		background-size:contain;
@@ -1089,6 +1090,10 @@ a{
 
 	.arrivals .card{
 		width: 25%;
+	}
+
+	.arrivals .card__heading{
+		text-align: center;
 	}
 
 	.arrivals .card__image{
@@ -1214,7 +1219,7 @@ a{
 	}
 
 	.follow__cta{
-		width: 13vw;
+		width: 15vw;
 	}
 
 	.follow{
